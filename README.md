@@ -40,3 +40,10 @@ public **static** class GeneralExtensions
 }
 
 ```
+
+
+### execise 1
+
+- Create new C# Console App
+- Console.Writeline Hello World
+- Build test in *powershell*

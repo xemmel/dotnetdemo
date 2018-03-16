@@ -47,3 +47,8 @@ public **static** class GeneralExtensions
 - Create new C# Console App
 - Console.Writeline Hello World
 - Build test in *powershell*
+
+
+Extension that can Print both an array string[] and a List<String>
+
+Hint: Use IEnumable<string>

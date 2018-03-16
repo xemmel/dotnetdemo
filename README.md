@@ -31,9 +31,9 @@ Extensions (Add methods to existing classes)
 
 ```csharp
 
-public **static** class GeneralExtensions
+public static class GeneralExtensions
 {
-	public **static** string Reverse(**this** string input)
+	public static string Reverse(this string input)
 	{
 	
 	}
@@ -52,3 +52,26 @@ public **static** class GeneralExtensions
 Extension that can Print both an array string[] and a List<String>
 
 Hint: Use IEnumable<string>
+
+
+##Final exam
+
+- Create a new console App Project
+- Create a class library
+- Create a test project for the class library
+
+> Examine existing solutions!
+> Only 1 solution with three projects
+
+
+- In the class library make a Models folder
+- Make an interface IPerson (Name, Age, Hobby)
+- Make two classes (Child and Adult) both has to implement the IPerson interface
+
+- Make an extension method for IEnumable<IPerson> called **Print**  (The method should return all names delimited by a *comma* (string not void as return)) -> **Morten, Lærke** -> Good for unit-testing
+
+- In the console App Create both an Array and a List with people and **Console.Writeline** the result from Print to the *Console*
+
+
+
+

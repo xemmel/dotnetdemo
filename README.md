@@ -1,6 +1,11 @@
 ## .NET Demo day
 
 
+## Table of content
+
+2. [Exam 2](#exam-2)
+
+
 .dll = Class Library (C# .NET Framework) (Project)
 .exe = Console App / Win Forms etc. (Project) (har PRÆCIS een Main method)
 
@@ -108,3 +113,46 @@ create table dbo.Sports (
 ```
 
 
+## Exam 2
+
+1. Create a new Solution
+2. Create two projects (One Class Library .DLL (no entry point (main))) and one Console App (Has entry point)
+3. Make a Models folder in the *class library*
+4. Create class(es) (Worker, Employee and Employer) (The two latter inherits a Worker)
+5. Create approx. 7-10 Properties and some Methods (Age calculated, RaiseSalary())
+6. Use the classes in your Console App (Reference needed)
+7. Create three SQL Tables (Worker, Employee and Employer) (Foreign keys) (Join in select)
+8. Use Dapper
+9. Populate all Employees and Employer using Dapper (con.Query<Employee>) and use *foreach* to very that all fields and all rows are shown
+10. Try mics. **LINQ** (Where, OrderBy...)
+
+```
+
+Worker (Name, DOB, Salary)
+
+
+1 Morten
+2 Lærke 
+
+
+Employee
+
+1 Salary F
+
+
+Employeer 
+2 Bonus
+
+
+select *
+from employer 
+inner join
+worker
+on ((ID = ID))
+
+
+--> Name, DOB, Salary, Bonus
+
+```
+
+[Back to top](#table-of-content)

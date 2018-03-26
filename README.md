@@ -73,5 +73,38 @@ Hint: Use IEnumable<string>
 - In the console App Create both an Array and a List with people and **Console.Writeline** the result from Print to the *Console*
 
 
+## Dapper
+
+
+```csharp
+
+                string connectionString = @"Server=WIN-IE5HKVPLVKT;Database=Test;Integrated Security=True;";
+                SqlConnection connection = new SqlConnection(connectionString);
+                connection.Open();
+
+                string sql = @"
+select
+*
+ from
+dbo.Sports;
+";
+
+                IEnumerable<Sport> sports = connection
+                                            .Query<Sport>(sql)
+                                            .Where(sp => sp.NumberOfPlayers > 5);
+
+
+```
+
+```SQL
+
+create table dbo.Sports (
+	Id int identity(1,1) primary key,
+	[Name] varchar(50),
+	NumberofPlayers int,
+	HasBall bit --Boolean in SQL world!!
+)
+
+```
 
 
